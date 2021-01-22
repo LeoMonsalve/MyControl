@@ -8,7 +8,7 @@
 }
 body {
  
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -122,10 +122,9 @@ footer a {
     color: #f8f9fa!important
 }
 
-.boton{
-margin-left: 650px;
-margin-top: 35px;
-margin-bottom: 6px;
+.login__buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
 .amigable{
