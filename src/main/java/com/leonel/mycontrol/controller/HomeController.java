@@ -19,12 +19,12 @@ public class HomeController {
     public String login(){
         return "/home/login.jsp";
     }
-    @RequestMapping("/entrega")
-    public String entrega() {
-    	return "/registro/entrega.jsp";
-    }
     @RequestMapping("/encomienda")
+    public String entrega() {
+    	return "/buscar/buscarpersona.jsp";
+    }
+    @RequestMapping("/menu")
     public String encomienda() {
-    	return "/personas/opcionPersona.jsp";
+    	return "/home/opcionesMenu.jsp";
     }
 }
