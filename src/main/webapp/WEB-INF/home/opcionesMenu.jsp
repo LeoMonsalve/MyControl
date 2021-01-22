@@ -37,7 +37,7 @@
 				</a> <a href="#" class="button" data-toggle="modal" data-target="#exampleModal2"><br> <br> <br>
 					<p>Buscar Entrega</p>
 					<span class="icon-dropbox"></span>
-				</a> <a href="#" class="button" data-toggle="modal" data-target="#exampleModal"><br> <br> <br>Buscar departamento<br>
+				</a> <a href="#" class="button"><br> <br> <br>Buscar departamento<br>
 					<span><img src="img/Edificio prueba.png" class="img-icon" alt="edificio"></span> </a>
 
 				<!-- MODAL AGREGAR PERSONA -->
