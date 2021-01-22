@@ -1,0 +1,243 @@
+@charset "ISO-8859-1";
+@import "font-awesome.min.css";
+@import "font-awesome-ie7.min.css";
+
+
+/* Space out content a bit */
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.bloc_left_price {
+    color: #c01508;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+}
+.category_block li:hover {
+    background-color: #007bff;
+}
+.category_block li:hover a {
+    color: #ffffff;
+}
+.category_block li a {
+    color: #343a40;
+}
+.add_to_cart_block .price {
+    color: #c01508;
+    text-align: center;
+    font-weight: bold;
+    font-size: 200%;
+    margin-bottom: 0;
+}
+.add_to_cart_block .price_discounted {
+    color: #343a40;
+    text-align: center;
+    text-decoration: line-through;
+    font-size: 140%;
+}
+.product_rassurance {
+    padding: 10px;
+    margin-top: 15px;
+    background: #ffffff;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+}
+.product_rassurance .list-inline {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.product_rassurance .list-inline li:hover {
+    color: #343a40;
+}
+.reviews_product .fa-star {
+    color: gold;
+}
+.pagination {
+    margin-top: 20px;
+}
+footer {
+    background: #343a40;
+    padding: 40px;
+}
+footer a {
+    color: #f8f9fa!important
+}
+
+.boton{
+margin-left: 650px;
+margin-top: 35px;
+margin-bottom: 6px;
+}
+
+.amigable{
+background-repeat: no-repeat;
+background-size: 1370px;
+min-height: 100%;
+color: white;
+}
+
+.registro{
+color: white;
+}
+
+.arriba{
+font-size: 25px;
+}
+
+.fondo{
+background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../imagenes/fondo.jpeg);
+width: 100%;
+height: 100%;
+background-size:100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+text-align:center;
+padding:40px;
+}
+
+.cuenta{
+margin-top: 6px;
+}
+
+/* css login-------------------------------- */
+
+.boton2{
+margin-left: 900px;
+}
+
+/* css entrega--------------------- */
+
+.btn-circle.btn-xl {
+  width: 300px;
+  height: 300px;
+  margin-top: 200px;
+  margin-left: 100px;
+  margin-bottom: 150px;
+  padding: 10px 16px;
+  border-radius: 50%;
+  line-height: 1.33;
+  opacity:0.8;
+}
+
+
+.btn-circle.btn-xl span{
+	font-size:80px;
+}
+
+
+.button{
+	
+	background:#7f8c8d;
+	color:#fff;
+	display:inline-block;
+	font-size:1.25em;
+	margin:30px;
+	padding: 30x;
+	text-align:center;
+	text-decoration:none;
+    border:none;
+	border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    opacity:0.8;
+}
+
+.button span{
+	font-size:80px;
+}
+.agregar{
+margin-left: 500px;
+}
+
+/* css encomienda */
+
+.numero{
+margin-left:18px;
+margin-bottom: 30px;
+}
+
+
+/* css buscar */
