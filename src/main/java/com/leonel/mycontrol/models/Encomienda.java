@@ -24,6 +24,7 @@ public class Encomienda {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
 	@DateTimeFormat
 	private String hora;
 	@DateTimeFormat

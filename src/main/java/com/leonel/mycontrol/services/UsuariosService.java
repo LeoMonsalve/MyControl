@@ -3,13 +3,9 @@ package com.leonel.mycontrol.services;
 import java.util.List;
 import java.util.Optional;
 
+import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.stereotype.Service;
-
-
-import com.leonel.mycontrol.models.Edificios;
-import com.leonel.mycontrol.models.Personas;
 import com.leonel.mycontrol.models.Usuarios;
-import com.leonel.mycontrol.models.Visitas;
 import com.leonel.mycontrol.repositories.UsuariosRepository;
 
 @Service
@@ -55,4 +51,37 @@ public class UsuariosService {
 	public void deleteUsuarios(Long id) {
 		usuariosRepository.deleteById(id);
 	}
+	 public Usuarios registrarUsuario(Usuarios  usuarios) {
+	        String hashed = BCrypt.hashpw(usuarios.getPassword(), BCrypt.gensalt());
+	        usuarios.setPassword(hashed);
+	        return usuariosRepository.save(usuarios);
+	    }
+	 public Usuarios findByEmail(String email) {
+		 return usuariosRepository.findByEmail(email);
+	 }
+	 
+	 public Usuarios findUserById(Long id) {
+	    	Optional<Usuarios> u = usuariosRepository.findById(id);
+	    	
+	    	if(u.isPresent()) {
+	            return u.get();
+	    	} else {
+	    	    return null;
+	    	}
+	    }
+	 public boolean autenticarUsuario(String email, String password) {
+	     
+	        Usuarios usuario = usuariosRepository.findByEmail(email);
+	       
+	        if(usuario == null) {
+	            return false;
+	        } else {
+	        
+	            if(BCrypt.checkpw(password, usuario.getPassword())) {
+	                return true;
+	            } else {
+	                return false;
+	            }
+	        }
+	    }
 }

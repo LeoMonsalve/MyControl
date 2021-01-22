@@ -36,20 +36,7 @@ public class VisitasService {
 	public Visitas updateVisitas(Visitas v) {
 		return visitasRepository.save(v);
 	}
-//	public Visitas updateVisitas(Long id, String hora, String fecha, Usuarios usuarios,
-//			List<Departamentos> departamento){
-//		Optional<Visitas>temp = visitasRepository.findById(id);
-//		if(temp.isPresent()) {
-//			Visitas visitas= temp.get();
-//			visitas.setHora(hora);
-//			visitas.setFecha(fecha);
-//			visitas.setUsuarios(usuarios);
-//			visitas.setDepartamento(departamento);
-//			updateVisitas(visitas);
-//			return visitas;
-//		}
-//		return null;
-//	}
+
 	public void deleteVisitas(Long id) {
 		visitasRepository.deleteById(id);
 	}

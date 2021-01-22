@@ -11,6 +11,7 @@ import com.leonel.mycontrol.models.Usuarios;
 public interface UsuariosRepository extends CrudRepository<Usuarios, Long>{
 	List<Usuarios> findAll();
 	
+	Usuarios findByEmail (String email);	
 	Optional<Usuarios> findById(Long id);
 	
 	void deleteById(Long id);

@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Optional;
 import org.springframework.stereotype.Service;
 import com.leonel.mycontrol.models.Empresas;
-import com.leonel.mycontrol.models.Visitas;
 import com.leonel.mycontrol.repositories.EmpresasRepository;
 
 @Service
