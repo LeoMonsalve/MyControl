@@ -17,7 +17,7 @@
         </head>
 
         <body>
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container">
                     <h4 class="text-light">My Control</h4>
 
@@ -67,26 +67,28 @@
 
                 <div class="container breadcrumb bg-info registro">
                     <h1 class="well">Registrarse</h1>
-                    <div class="col-lg-12 well">
+                    <div class="col-lg-12  col-lg-6 well">
                         <div class="row">
-                            <form:form >
+                            <form:form class="col-sm-12">
                                 <div class="col-sm-12">
                                     <div class="row">
-                                        <div class="col-sm-6 orm-group">
+                                        <div class="col-sm-12 col-lg-6 orm-group">
                                             <label>Correo:</label>
-                                            <input type="email" placeholder="Ingrese Correo" class="form-control" name="email">
+                                            <input type="email" placeholder="Ingrese Correo" class="form-control"
+                                                name="email">
                                         </div>
-                                        <div class="col-sm-6 form-group">
+                                        <div class="col-sm-12 col-lg-6 form-group">
                                             <label>Contraseña:</label>
-                                            <input type="password" placeholder="Ingrese contraseña" class="form-control" name="password">
+                                            <input type="password" placeholder="Ingrese contraseña" class="form-control"
+                                                name="password">
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm-6 form-group">
+                                        <div class="col-sm-12 col-lg-6 form-group">
                                             <label>Nombre Edificio:</label>
-                                            <input type="text" placeholder="Nombre edificio" class="form-control" >
+                                            <input type="text" placeholder="Nombre edificio" class="form-control">
                                         </div>
-                                        <div class="col-sm-6 form-group">
+                                        <div class="col-sm-12 col-lg-6 form-group">
                                             <label>Confirmar Contraseña:</label>
                                             <input type="password" placeholder="Confirme su contraseña"
                                                 class="form-control">
@@ -95,26 +97,25 @@
 
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm-6 form-group">
+                                        <div class="col-sm-12 col-lg-6 form-group">
                                             <label>Rut:</label>
                                             <input type="text" placeholder="Ingrese su Rut" class="form-control">
                                         </div>
-                                        <div class="col-sm-6 form-group">
+                                        <div class="col-sm-12  col-lg-6 form-group">
                                             <label>Direccion:</label>
                                             <input type="text" placeholder="Ingrese su dirección" class="form-control">
                                         </div>
 
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm-3 form-group">
+                                        <div class="col-sm-12 form-group">
                                             <h5>¿Ya tienes cuenta?</h5>
+                                        </div>
+                                        <div class="col-sm-12 login__buttons">
                                             <a class="btn btn-lg btn-secondary cuenta" href="/login">Iniciar Sesión
                                                 <span class="icon-arrow-right"></span>
                                             </a>
-
-                                        </div>
-                                        <div class="col-sm-3 form-group">
-                                            <a class="btn btn-lg btn-secondary boton" href="/login">Vamos
+                                            <a class="btn btn-lg btn-secondary" href="/login">Vamos
                                                 <span class="icon-arrow-right "></span>
                                             </a>
                                         </div>
@@ -122,18 +123,19 @@
 
 
                                 </div>
-                            </form>
+                                </form>
                         </div>
                     </div>
                 </div>
             </div>
             </div>
 
+            <!-- FOOTEER -->
             <footer class="text-light">
-            
-               /<div class="container">
+
+                <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-lg-4 col-xl-3">
+                        <div class="col-lg-3 col-lg-4 col-xl-3">
                             <a name="sobrenosotros">
                                 <h5>Sobre Nosotros</h5>
                             </a>
@@ -146,7 +148,7 @@
                             </p>
                         </div>
 
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                        <div class="col-lg-3 col-lg-2 col-xl-2 mx-auto">
                             <h5>Others links</h5>
                             <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
                             <ul class="list-unstyled">
@@ -157,8 +159,10 @@
                             </ul>
                         </div>
 
-                        <div class="col-md-4 col-lg-3 col-xl-3">
-                            <a name="contactenos"><h5>Contáctenos</h5></a>
+                        <div class="col-lg-4 col-lg-3 col-xl-3">
+                            <a name="contactenos">
+                                <h5>Contáctenos</h5>
+                            </a>
                             <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
                             <ul class="list-unstyled">
                                 <li><i class="fa fa-home mr-2"></i> Mycontrol en Slack</li>
@@ -172,7 +176,7 @@
                             <p>
                                 <a href="#">Volver al inicio</a>
                             </p>
-                            <p class="text-right">Creado  <i class="fa fa-heart"></i> por <a><i>Equipo
+                            <p class="text-right">Creado <i class="fa fa-heart"></i> por <a><i>Equipo
                                         MyControl</i></a>
                             </p>
                         </div>
