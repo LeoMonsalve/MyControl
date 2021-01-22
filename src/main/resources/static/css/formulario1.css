@@ -1,17 +1,22 @@
-@charset "ISO-8859-1";
-@import "font-awesome.min.css";
-@import "font-awesome-ie7.min.css";
 
+button.same-width {
+  min-width: 152.41px;
+}
+
+img.img-icon {
+  width: 80px;
+  height: 80px;
+}
+
+div .space {
+  min-height: 180px;
+}
 
 /* Space out content a bit */
 
 *{
  margin: 0px;
  padding: 0px;
-}
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -39,6 +44,7 @@ body {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+  position: absolute;
 }
 
 /* Customize container */
@@ -175,7 +181,7 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
 text-align:center;
-padding:40px;
+min-height: 700px;
 }
 
 .cuenta{
